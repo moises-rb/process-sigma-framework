@@ -127,9 +127,10 @@ else:
 st.sidebar.markdown("---")
 st.sidebar.markdown("""
 **ProcessSigma Framework**
-[GitHub](https://github.com/seu-usuario/processsigma-framework) |
-[Full Project](https://github.com/seu-usuario/processsigma-delivery-intelligence)
-
+[GitHub](https://github.com/moises-rb) |
+[Full Project](https://github.com/moises-rb/process-sigma-framework) |
+[Connect or Contact](https://www.linkedin.com/in/moisesrsjr/)
+                    
 *Six Sigma + Data Engineering + Process Mining*
 """)
 
