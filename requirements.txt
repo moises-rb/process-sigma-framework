@@ -1,12 +1,11 @@
 # ProcessSigma — Minimal Example
 # Install: pip install -r requirements_minimal.txt
 
-pandas==2.2.2
-numpy==1.26.4
-plotly==5.22.0
-streamlit==1.35.0
-openpyxl==3.1.2
-loguru==0.7.2
-nbformat==5.10.4
-jupyterlab==4.2.0
+pandas
+numpy
+plotly
+streamlit
+openpyxl
+loguru
+nbformat
 kaleido==0.1.0post1
