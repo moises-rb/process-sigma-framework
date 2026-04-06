@@ -361,5 +361,5 @@ with tab3:
 st.markdown("---")
 st.caption(
     "ProcessSigma Framework — Minimal Example | "
-    "Full project: github.com/seu-usuario/processsigma-delivery-intelligence"
+    "Full project: https://github.com/moises-rb/process-sigma-framework"
 )
