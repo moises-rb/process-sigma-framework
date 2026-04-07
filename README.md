@@ -25,7 +25,7 @@ O projeto completo (privado) inclui:
 
 ### 1. Clonar o repositório
 ```bash
-git clone https://github.com/seu-usuario/processsigma-framework.git
+git clone https://github.com/moises-rb/process-sigma-framework
 cd processsigma-framework
 ```
 

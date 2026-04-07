@@ -1,61 +1,71 @@
-# Post LinkedIn — ProcessSigma Framework
+### 🚀 Estudando para Black Belt? Eu também! E estou explorando como Engenharia de Dados e Estatística para Análise de Dados podem caminhar juntas rumo à excelência de processos.
+
+
+Estou mergulhado nos estudos para minha certificação Six Sigma Black Belt, e para fixar o aprendizado, tenho colocado a mão na massa com projetos práticos.  
+Hoje, quero compartilhar um deles: o **ProcessSigma Framework**.
 
 ---
 
-Transformei 3 anos de dados de uma cadeia de suprimentos global em um Business Case Black Belt — automaticamente.
+### Por que esse projeto?
 
-E agora publiquei o framework para qualquer pessoa replicar.
-
-**O problema que investiguei:**
-
-Uma operação com mais de 180 mil registros, 23 regiões no mundo inteiro, operando há 3 anos com mais de 57% de atraso nas entregas. Ninguém sabia exatamente por quê.
-
-**O que os dados provaram:**
-
-Três testes estatísticos independentes — Qui-Quadrado, ANOVA e Teste T — chegaram à mesma conclusão: a diferença entre a pior região (61% de atraso) e a melhor (52%) é ruído estatístico. Não existe uma região culpada.
-
-O problema está no processo central de agendamento. Afeta todas as 23 regiões com a mesma intensidade. É estável há 37 meses consecutivos.
-
-Isso é o diagnóstico mais valioso que um Black Belt pode entregar — não "região X está com problema", mas "o design do processo está errado e precisa ser redesenhado".
-
-**Os números do Business Case:**
-
-- DPMO: 573.336 (meta: 6.210)
-- Nível Sigma: 1.5σ (meta: 4.0σ)
-- Cpk: 0.11 (processo incapaz — meta: ≥ 1.33)
-- Gap para a meta: 98.9% de redução no DPMO necessária
-
-**O que foi construído para chegar nisso:**
-
-Pipeline completo com arquitetura Medalhão (Bronze → Silver → Gold) no Supabase, ETL em Python, análise estatística em R com qcc (Carta P, Carta XBar, Análise de Capabilidade), Process Mining com PM4Py, dashboard interativo no Streamlit e painel executivo no Power BI.
-
-**O que estou publicando como open source:**
-
-Um minimal example que qualquer pessoa pode rodar em 5 minutos — sem banco de dados, sem infraestrutura, sem configuração complexa. Um notebook Jupyter + um app Streamlit que lê um CSV e entrega:
-
-→ Distribuição do desvio de lead time
-→ OTD% por região com linha de meta
-→ Tendência mensal com identificação de causas especiais
-→ P-Chart com detecção automática de pontos fora de controle
-→ Resumo executivo com Sigma Level e recomendação
-
-**O que aprendi que vale compartilhar:**
-
-R e Python não são concorrentes. Python faz o pipeline. R faz o que o Minitab faz para os Belts — Cartas de Controle, Cpk, testes de hipótese — com output direto, sem implementar do zero.
-
-Um processo estável no lugar errado é tão preocupante quanto um processo fora de controle. Estável em 57% de atraso durante 3 anos não é azar. É design.
-
-Dado limpo conta a história. Mas dado interpretado estatisticamente muda decisões.
-
-**Link do repositório público:**
-
-github.com/seu-usuario/processsigma-framework
-
-O framework funciona para logística, healthcare, TI, RH, construção — qualquer processo que tenha uma data de início, uma data de fim e um prazo prometido.
-
-Se você trabalha com dados e qualidade, vale explorar.
+Durante os estudos, percebi que a maior dificuldade não era entender a teoria, mas **aplicar Six Sigma em dados reais**.  
+Por isso, criei um framework leve, reutilizável e **sem necessidade de banco de dados**, que transforma um simples CSV em indicadores de qualidade acionáveis.
 
 ---
 
-*Hashtags sugeridas:*
-#sixsigma #blackbelt #engenhariadadados #python #rlanguage #processimprovement #dataanalytics #streamlit #portfólio #qualidade #supplychain #leanseissigma #processmining #datascience
+### O desafio que enfrentei
+
+Analisei **180 mil registros** de uma operação global, com **23 regiões** e **57% de atraso** nas entregas.  
+O objetivo era descobrir se o problema era regional ou sistêmico.
+
+---
+
+### O que os dados me ensinaram
+
+Três testes estatísticos (**Qui-Quadrado, ANOVA e Teste T**) mostraram:  
+> **Não existe uma região culpada.**  
+O problema está no **processo central de agendamento**, afetando todo o mundo da mesma forma — e de maneira estável há **37 meses**.
+
+Como futuro Black Belt, esse foi o maior aprendizado:  
+> **Não se trata de “quem está errando”, mas de “como o processo foi desenhado”.**
+
+---
+
+### O que construí para chegar lá
+
+- **Pipeline Medalhão** (Bronze → Silver → Gold) no Supabase
+- **ETL em Python**
+- **Análise estatística em R** (Cartas de Controle, Cpk, testes de hipótese)
+- **Process Mining com PM4Py**
+- **Dashboard interativo em Streamlit**
+- **Painel executivo em Power BI**
+
+---
+
+### Agora, compartilho com você
+
+Publiquei um **minimal example** no GitHub, para que qualquer pessoa possa rodar em 5 minutos e ver como dados brutos podem virar decisões inteligentes.
+
+🔗 [github.com/moises-rb/process-sigma-framework](https://github.com/moises-rb/process-sigma-framework)
+
+---
+
+### O que aprendi (e recomendo para quem está estudando)
+
+- **A prática é o melhor professor:** Aplicar DMAIC em dados reais acelera o aprendizado.
+- **Python e R juntos são imbatíveis:** Um para pipeline, outro para análise estatística robusta.
+- **Processo estável no lugar errado é tão ruim quanto fora de controle** — e exige redesenho, não só ajustes.
+- **Compartilhar é crescer:** Ao documentar e publicar, você consolida o conhecimento e ainda ajuda outros na jornada.
+
+---
+
+### Quer experimentar?
+
+Clone o repositório, rode o notebook e o dashboard, e me conte nos comentários:  
+**Qual insight você descobriu nos seus dados?**
+
+---
+
+### Hashtags
+
+#sixsigma #blackbelt #estudos #engenhariadadados #python #rlanguage #processimprovement #dataanalytics #streamlit #qualidade #supplychain #leanseissigma #processmining #datascience
