@@ -4,6 +4,10 @@
 > **Six Sigma + Engenharia de Dados + Process Mining**  
 >Um framework leve e sem necessidade de banco de dados para aplicar a metodologia DMAIC em qualquer conjunto de dados operacionais..
 
+> *Abra o Projeto Online clicando no botão abaixo:*
+
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://process-sigma-framework.streamlit.app/)
+
 ---
 
 ## O que é isso?
