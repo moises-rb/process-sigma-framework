@@ -1,0 +1,9 @@
+# Rascunhos que o Python gera sozinho
+__pycache__/
+*.pyc
+
+# Ambiente virtual (as bibliotecas instaladas na sua máquina)
+.venv/
+
+# Rascunhos automáticos do Jupyter
+.ipynb_checkpoints/
