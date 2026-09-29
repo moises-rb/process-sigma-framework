@@ -30,7 +30,7 @@ O projeto completo (privado) inclui:
 ### 1. Clonar o repositório
 ```bash
 git clone https://github.com/moises-rb/process-sigma-framework
-cd processsigma-framework
+cd process-sigma-framework
 ```
 
 ### 2. Criar ambiente com uv (recomendado)
@@ -44,14 +44,14 @@ uv venv --python 3.11
 source .venv/bin/activate     # Linux/Mac
 
 # Instalar dependências (~2 minutos)
-uv pip install -r requirements_minimal.txt
+uv pip install -r requirements.txt
 ```
 
 ### Alternativa: usar pip
 ```bash
 python -m venv .venv
 .venv\Scripts\activate
-pip install -r requirements_minimal.txt
+pip install -r requirements.txt
 ```
 
 ### 3. Adicionar seus dados
@@ -72,10 +72,10 @@ streamlit run minimal_example_app.py
 ## Estrutura do Projeto
 
 ```
-processsigma-framework/
+process-sigma-framework/
 ├── minimal_example.ipynb       # Notebook narrativo passo a passo
 ├── minimal_example_app.py      # Dashboard Streamlit standalone
-├── requirements_minimal.txt    # Dependências mínimas (uv recomendado)
+├── requirements.txt            # Dependências mínimas (uv recomendado)
 ├── data/
 │   └── template_injecao.csv    # Template de dados
 ├── exports/                    # Gráficos gerados (criado automaticamente)

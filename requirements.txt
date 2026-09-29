@@ -1,5 +1,5 @@
 # ProcessSigma — Minimal Example
-# Install: pip install -r requirements_minimal.txt
+# Install: pip install -r requirements.txt
 
 pandas
 numpy
