@@ -1,10 +1,13 @@
 # ProcessSigma — Minimal Example
 # Install: pip install -r requirements.txt
+# Versões testadas em Python 3.11 (setembro/2026)
 
-pandas
-numpy
-plotly
-streamlit
-openpyxl
-loguru
-nbformat
+pandas==2.3.3
+numpy==2.4.6
+plotly==7.1.0
+streamlit==1.64.0
+openpyxl==3.1.5
+loguru==0.7.3
+nbformat==5.11.1
+notebook==7.6.3      # necessário para "jupyter notebook"
+kaleido==1.4.0       # exporta os gráficos em PNG (exige Chrome instalado)

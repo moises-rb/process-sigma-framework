@@ -43,7 +43,7 @@ uv venv --python 3.11
 .venv\Scripts\activate        # Windows
 source .venv/bin/activate     # Linux/Mac
 
-# Instalar dependências (~2 minutos)
+# Instalar dependências (cerca de 1 minuto)
 uv pip install -r requirements.txt
 ```
 
@@ -61,6 +61,8 @@ Coloque seu CSV na pasta data/ seguindo o formato do template, ou deixe o notebo
 ```bash
 jupyter notebook minimal_example.ipynb
 ```
+
+> **Pré-requisito para exportar os PNGs:** o notebook salva os gráficos em `exports/` usando o Kaleido, que precisa do **Google Chrome** (ou Chromium) instalado. Se não tiver, rode `kaleido_get_chrome` com o ambiente ativo.
 
 ### 5. Executar o dashboard
 ```bash
@@ -130,8 +132,8 @@ O framework requer apenas 5 campos para rodar:
 ## Stack
 
 ![Python](https://img.shields.io/badge/Python-3.11-blue?style=flat-square)
-![Streamlit](https://img.shields.io/badge/Streamlit-1.35-red?style=flat-square)
-![Plotly](https://img.shields.io/badge/Plotly-5.22-lightblue?style=flat-square)
+![Streamlit](https://img.shields.io/badge/Streamlit-1.64-red?style=flat-square)
+![Plotly](https://img.shields.io/badge/Plotly-7.1-lightblue?style=flat-square)
 ![uv](https://img.shields.io/badge/uv-0.11-green?style=flat-square)
 
 ---
