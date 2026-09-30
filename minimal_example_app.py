@@ -90,7 +90,7 @@ def generate_synthetic(n=500) -> pd.DataFrame:
 # ── Sidebar ───────────────────────────────────────────────────
 st.sidebar.image(
     "https://img.shields.io/badge/ProcessSigma-Delivery%20Intelligence-1F4E79?style=for-the-badge",
-    use_column_width=True
+    width="stretch"
 )
 st.sidebar.title("⚡ ProcessSigma")
 st.sidebar.caption("Minimal Example — No database required")
@@ -209,7 +209,7 @@ with tab1:
             annotation_text=f"Mean: {df_f['delay_days'].mean():.2f}d",
             annotation_position="top right"
         )
-        st.plotly_chart(fig1, use_container_width=True)
+        st.plotly_chart(fig1, width="stretch")
 
     with col_b:
         st.subheader("OTD (%) by Region")
@@ -229,7 +229,7 @@ with tab1:
         )
         fig2.add_vline(x=95, line_dash="dash", line_color="green",
                        annotation_text="Target 95%")
-        st.plotly_chart(fig2, use_container_width=True)
+        st.plotly_chart(fig2, width="stretch")
 
     st.subheader("Monthly OTD Trend")
     monthly_otd = df_f.groupby("period").agg(
@@ -247,7 +247,7 @@ with tab1:
     )
     fig3.add_hline(y=95, line_dash="dash", line_color="green",
                    annotation_text="Target 95%")
-    st.plotly_chart(fig3, use_container_width=True)
+    st.plotly_chart(fig3, width="stretch")
 
 # ── TAB 2: P-Chart ────────────────────────────────────────────
 with tab2:
@@ -292,7 +292,7 @@ with tab2:
         title=f"P-Chart | {out_count} point(s) out of control",
         xaxis_title="Period", yaxis_title="Proportion of Defects"
     )
-    st.plotly_chart(fig_p, use_container_width=True)
+    st.plotly_chart(fig_p, width="stretch")
 
     if out_count == 0:
         st.success("✅ Process is STATISTICALLY STABLE — no special causes detected.")
@@ -336,7 +336,7 @@ with tab3:
             yaxis=dict(range=[0, 6.5]),
             xaxis_title="Period", yaxis_title="Sigma Level (σ)"
         )
-        st.plotly_chart(fig_s, use_container_width=True)
+        st.plotly_chart(fig_s, width="stretch")
 
     with col_s2:
         st.subheader("Six Sigma Reference")
@@ -346,7 +346,7 @@ with tab3:
             "OTD":   ["99.9997%","99.98%","99.4%","93.3%","69.1%","< 50%"],
             "Class": ["World Class","Excellent","Good ✓","Attention","Poor","Critical"]
         })
-        st.dataframe(ref, use_container_width=True, hide_index=True)
+        st.dataframe(ref, width="stretch", hide_index=True)
 
         st.markdown("---")
         st.subheader("Your Process")

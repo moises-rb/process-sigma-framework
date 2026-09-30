@@ -14,7 +14,6 @@ def save_figure(
     fig: BaseFigure,
     filename: str,
     output_dir: str = "exports",
-    engine: str = "kaleido",
     format: Optional[str] = None,
 ) -> str:
     """Save a single Plotly figure to the exports folder.
@@ -23,7 +22,6 @@ def save_figure(
         fig: Plotly figure to save.
         filename: Output filename, with or without extension.
         output_dir: Directory where files are saved.
-        engine: Plotly image engine to use.
         format: Optional explicit image format (png, jpg, svg, pdf).
 
     Returns:
@@ -36,14 +34,13 @@ def save_figure(
     if format is not None:
         file_path = file_path.with_suffix(f".{format}")
 
-    fig.write_image(str(file_path), engine=engine)
+    fig.write_image(str(file_path))
     return str(file_path)
 
 
 def save_figures(
     figures: Dict[str, BaseFigure],
     output_dir: str = "exports",
-    engine: str = "kaleido",
     format: Optional[str] = None,
 ) -> Dict[str, str]:
     """Save multiple Plotly figures using a filename-to-figure map.
@@ -51,7 +48,6 @@ def save_figures(
     Args:
         figures: Mapping of output filename to Plotly figure.
         output_dir: Directory where files are saved.
-        engine: Plotly image engine to use.
         format: Optional explicit image format for all figures.
 
     Returns:
@@ -63,7 +59,6 @@ def save_figures(
             fig,
             filename,
             output_dir=output_dir,
-            engine=engine,
             format=format,
         )
     return saved_paths
